@@ -69,12 +69,6 @@ export const problem = defineType({
       of: [defineArrayMember({type: 'reference', to: [{type: 'suburb'}]})],
     }),
     defineField({
-      name: 'relatedCaseStudies',
-      title: 'Related case studies',
-      type: 'array',
-      of: [defineArrayMember({type: 'reference', to: [{type: 'caseStudy'}]})],
-    }),
-    defineField({
       name: 'seoTitle',
       title: 'SEO title',
       type: 'string',

@@ -76,13 +76,6 @@ export const suburb = defineType({
       validation: (rule) => rule.required().custom(noEmDashBlocks),
     }),
     defineField({
-      name: 'caseStudies',
-      title: 'Local case studies',
-      type: 'array',
-      of: [defineArrayMember({type: 'reference', to: [{type: 'caseStudy'}]})],
-      description: 'Recent jobs in this suburb.',
-    }),
-    defineField({
       name: 'nearbySuburbs',
       title: 'Nearby suburbs',
       type: 'array',
